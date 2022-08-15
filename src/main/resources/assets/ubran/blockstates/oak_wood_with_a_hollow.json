@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "ubran:block/oak_wood_with_a_hollow",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "ubran:block/oak_wood_with_a_hollow"
+    },
+    "axis=z": {
+      "model": "ubran:block/oak_wood_with_a_hollow",
+      "x": 90
+    }
+  }
+}

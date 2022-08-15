@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ubran:blocks/oak_log_top",
+    "up": "ubran:blocks/oak_log_top",
+    "north": "ubran:blocks/oak_wood_with_a_hollow",
+    "east": "ubran:blocks/oak_log",
+    "south": "ubran:blocks/oak_log",
+    "west": "ubran:blocks/oak_log",
+    "particle": "ubran:blocks/oak_log_top"
+  }
+}
