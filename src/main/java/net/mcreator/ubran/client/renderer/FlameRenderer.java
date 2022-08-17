@@ -16,13 +16,13 @@ public class FlameRenderer extends MobRenderer<FlameEntity, Modelflama<FlameEnti
 		this.addLayer(new EyesLayer<FlameEntity, Modelflama<FlameEntity>>(this) {
 			@Override
 			public RenderType renderType() {
-				return RenderType.eyes(new ResourceLocation("ubran:textures/flama.png"));
+				return RenderType.eyes(new ResourceLocation("ubran:textures/entities/flama.png"));
 			}
 		});
 	}
 
 	@Override
 	public ResourceLocation getTextureLocation(FlameEntity entity) {
-		return new ResourceLocation("ubran:textures/flama.png");
+		return new ResourceLocation("ubran:textures/entities/flama.png");
 	}
 }

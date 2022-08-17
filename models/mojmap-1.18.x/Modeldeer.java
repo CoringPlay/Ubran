@@ -1,10 +1,4 @@
-// Made with Blockbench 4.3.1
-// Exported for Minecraft version 1.17 - 1.18 with Mojang mappings
-// Paste this class into your mod and generate all required imports
-
 public class Modeldeer<T extends Entity> extends EntityModel<T> {
-	// This layer location should be baked with EntityRendererProvider.Context in
-	// the entity renderer and passed into this model's constructor
 	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(
 			new ResourceLocation("modid", "custom_model"), "main");
 	private final ModelPart head;
@@ -22,7 +16,7 @@ public class Modeldeer<T extends Entity> extends EntityModel<T> {
 		this.right_leg_1 = root.getChild("right_leg_1");
 		this.right_leg_2 = root.getChild("right_leg_2");
 	}
-
+	
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();

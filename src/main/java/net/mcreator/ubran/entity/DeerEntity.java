@@ -60,7 +60,7 @@ public class DeerEntity extends Animal {
 
 	public DeerEntity(EntityType<DeerEntity> type, Level world) {
 		super(type, world);
-		xpReward = 5;
+		xpReward = 2;
 		setNoAi(false);
 	}
 
@@ -125,6 +125,7 @@ public class DeerEntity extends Animal {
 		builder = builder.add(Attributes.MAX_HEALTH, 10);
 		builder = builder.add(Attributes.ARMOR, 1);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 0);
+		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		return builder;
 	}
 }

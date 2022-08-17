@@ -15,6 +15,6 @@ public class DeerRenderer extends MobRenderer<DeerEntity, Modeldeer<DeerEntity>>
 
 	@Override
 	public ResourceLocation getTextureLocation(DeerEntity entity) {
-		return new ResourceLocation("ubran:textures/deer.png");
+		return new ResourceLocation("ubran:textures/entities/deer.png");
 	}
 }

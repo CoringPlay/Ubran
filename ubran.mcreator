@@ -185,6 +185,15 @@
       "locked_code": false,
       "registry_name": "oak_wood_with_a_hollow",
       "path": "~/Blocks/Logs"
+    },
+    {
+      "name": "CreeperMushroom",
+      "type": "livingentity",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creeper_mushroom",
+      "path": "~/Mobs/Agresic"
     }
   ],
   "variable_elements": [],
@@ -192,6 +201,8 @@
   "language_map": {
     "en_us": {
       "entity.ubran.deer": "Deer",
+      "item.ubran.creeper_mushroom_spawn_egg": "Creeper Mushroom Spawn Egg",
+      "entity.ubran.creeper_mushroom": "Creeper Mushroom",
       "item.ubran.flame_spawn_egg": "Flame Spawn Egg",
       "item.ubran.mushroom_walker_spawn_egg": "Mushroom Walker Spawn Egg",
       "entity.ubran.mushroom_walker": "Mushroom Walker",
@@ -219,6 +230,10 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "Agresic",
+            "children": []
           }
         ]
       },
@@ -282,6 +297,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Gamerule",
+        "children": []
       }
     ]
   },
@@ -307,5 +326,5 @@
     "modElementsPackage": "net.mcreator.ubran",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202200120510
+  "mcreatorVersion": 202200233511
 }

@@ -19,6 +19,7 @@ import net.minecraft.world.entity.Entity;
 import net.mcreator.ubran.entity.MushroomWalkerEntity;
 import net.mcreator.ubran.entity.FlameEntity;
 import net.mcreator.ubran.entity.DeerEntity;
+import net.mcreator.ubran.entity.CreeperMushroomEntity;
 import net.mcreator.ubran.UbranMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -37,6 +38,11 @@ public class UbranModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MushroomWalkerEntity::new)
 
 					.sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<CreeperMushroomEntity>> CREEPER_MUSHROOM = register("creeper_mushroom",
+			EntityType.Builder.<CreeperMushroomEntity>of(CreeperMushroomEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CreeperMushroomEntity::new)
+
+					.sized(0.6f, 1.7999999999999998f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -48,6 +54,7 @@ public class UbranModEntities {
 			FlameEntity.init();
 			DeerEntity.init();
 			MushroomWalkerEntity.init();
+			CreeperMushroomEntity.init();
 		});
 	}
 
@@ -56,5 +63,6 @@ public class UbranModEntities {
 		event.put(FLAME.get(), FlameEntity.createAttributes().build());
 		event.put(DEER.get(), DeerEntity.createAttributes().build());
 		event.put(MUSHROOM_WALKER.get(), MushroomWalkerEntity.createAttributes().build());
+		event.put(CREEPER_MUSHROOM.get(), CreeperMushroomEntity.createAttributes().build());
 	}
 }

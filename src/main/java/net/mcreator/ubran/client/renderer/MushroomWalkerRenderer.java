@@ -15,6 +15,6 @@ public class MushroomWalkerRenderer extends MobRenderer<MushroomWalkerEntity, Mo
 
 	@Override
 	public ResourceLocation getTextureLocation(MushroomWalkerEntity entity) {
-		return new ResourceLocation("ubran:textures/mushroom_walker.png");
+		return new ResourceLocation("ubran:textures/entities/mushroom_walker.png");
 	}
 }
