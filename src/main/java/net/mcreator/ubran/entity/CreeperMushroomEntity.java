@@ -7,6 +7,7 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
+import net.minecraftforge.common.DungeonHooks;
 
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.biome.MobSpawnSettings;
@@ -37,11 +38,17 @@ import net.minecraft.network.protocol.Packet;
 
 import net.mcreator.ubran.init.UbranModEntities;
 
+import java.util.Set;
+
 @Mod.EventBusSubscriber
 public class CreeperMushroomEntity extends Creeper {
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("mushroom_fields"));
+
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(UbranModEntities.CREEPER_MUSHROOM.get(), 20, 4, 4));
+		if (SPAWN_BIOMES.contains(event.getName()))
+			event.getSpawns().getSpawner(MobCategory.MONSTER)
+					.add(new MobSpawnSettings.SpawnerData(UbranModEntities.CREEPER_MUSHROOM.get(), 100, 1, 2));
 	}
 
 	public CreeperMushroomEntity(PlayMessages.SpawnEntity packet, Level world) {
@@ -102,6 +109,7 @@ public class CreeperMushroomEntity extends Creeper {
 		SpawnPlacements.register(UbranModEntities.CREEPER_MUSHROOM.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
 						&& Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
+		DungeonHooks.addDungeonMob(UbranModEntities.CREEPER_MUSHROOM.get(), 180);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
