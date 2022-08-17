@@ -301,6 +301,10 @@
       {
         "name": "Gamerule",
         "children": []
+      },
+      {
+        "name": "Structures",
+        "children": []
       }
     ]
   },
