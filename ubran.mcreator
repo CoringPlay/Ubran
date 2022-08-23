@@ -321,7 +321,7 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [
-      "gecholib",
+      "worldedit",
       "jade",
       "jei"
     ],
@@ -330,5 +330,5 @@
     "modElementsPackage": "net.mcreator.ubran",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202200233511
+  "mcreatorVersion": 202200234517
 }

@@ -7,8 +7,8 @@ repositories {
     }
 }
 dependencies {
-   compileOnly fg.deobf("curse.maven:geckolib-388172:3847904")
-   runtimeOnly fg.deobf("curse.maven:geckolib-388172:3847904")
+   compileOnly fg.deobf("curse.maven:worldedit-225608:3697298")
+   runtimeOnly fg.deobf("curse.maven:worldedit-225608:3697298")
 }
 
 repositories {

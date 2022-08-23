@@ -20,7 +20,7 @@ authors="CoringPlay, MCreator"
 
 
 [[dependencies.ubran]]
-    modId="gecholib"
+    modId="worldedit"
     mandatory=false
     versionRange="[0,)"
     ordering="NONE"
