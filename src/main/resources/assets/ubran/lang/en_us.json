@@ -1,12 +1,16 @@
 {
   "entity.ubran.deer": "Deer",
-  "item.ubran.creeper_mushroom_spawn_egg": "Creeper Mushroom Spawn Egg",
-  "entity.ubran.creeper_mushroom": "Creeper Mushroom",
-  "item.ubran.flame_spawn_egg": "Flame Spawn Egg",
   "item.ubran.mushroom_walker_spawn_egg": "Mushroom Walker Spawn Egg",
   "entity.ubran.mushroom_walker": "Mushroom Walker",
   "block.ubran.oak_wood_with_a_hollow": "Oak Wood With A Hollow",
   "item.ubran.scythe": "Scythe",
   "entity.ubran.flame": "Flame",
-  "item.ubran.deer_spawn_egg": "Deer Spawn Egg"
+  "item.ubran.deer_spawn_egg": "Deer Spawn Egg",
+  "item.ubran.creeper_mushroom_spawn_egg": "Creeper Mushroom Spawn Egg",
+  "entity.ubran.creeper_mushroom": "Creeper Mushroom",
+  "item.ubran.flame_spawn_egg": "Flame Spawn Egg",
+  "item.ubran.venison": "Venison",
+  "item.ubran.durandal_sword": "Durandal Sword",
+  "item.ubran.cookedvenison": "Cooked Venison",
+  "item.ubran.angel_axe": "Angel Axe"
 }

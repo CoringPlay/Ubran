@@ -1,0 +1,37 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "angel_axe",
+    "customModelName": "Normal",
+    "name": "Angel Axe",
+    "specialInfo": [
+      "§8Right click will launch you",
+      "§8in the direction you are looking"
+    ],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 4,
+    "efficiency": 12.0,
+    "attackSpeed": 2.0,
+    "enchantability": 18,
+    "damageVsEntity": 14.0,
+    "usageCount": 1024,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Blocks.GOLD_BLOCK"
+      }
+    ],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "AngelAxeproc"
+    }
+  }
+}

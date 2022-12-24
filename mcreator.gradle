@@ -1,14 +1,13 @@
 repositories {
-    maven {
-        url "https://www.cursemaven.com"
-        content {
-            includeGroup "curse.maven"
-        }
-    }
+maven { 
+    url = 'https://maven.blamejared.com'
+    name = 'BlameJared Maven'
 }
+}   
 dependencies {
-   compileOnly fg.deobf("curse.maven:worldedit-225608:3697298")
-   runtimeOnly fg.deobf("curse.maven:worldedit-225608:3697298")
+    compileOnly(fg.deobf('com.blamejared.crafttweaker:CraftTweaker-forge-1.18.2:9.1.83'))
+    // Example:
+    // compileOnly(fg.deobf('com.blamejared.crafttweaker:CraftTweaker-forge-1.18.2:9.1.83'))
 }
 
 repositories {
@@ -38,7 +37,7 @@ repositories {
 }
 
 dependencies {
-  compileOnly fg.deobf("mezz.jei:jei-1.18.2:9.5.0.132:api")
-  runtimeOnly fg.deobf("mezz.jei:jei-1.18.2:9.5.0.132")
+  compileOnly fg.deobf("mezz.jei:jei-1.18.2:9.7.1.255:api")
+  runtimeOnly fg.deobf("mezz.jei:jei-1.18.2:9.7.1.255")
 }
 

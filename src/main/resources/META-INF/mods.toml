@@ -20,7 +20,7 @@ authors="CoringPlay, MCreator"
 
 
 [[dependencies.ubran]]
-    modId="worldedit"
+    modId="crafttweaker"
     mandatory=false
     versionRange="[0,)"
     ordering="NONE"

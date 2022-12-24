@@ -1,0 +1,20 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 2.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:Venison"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:Cookedvenison"
+    },
+    "name": "cooked_venison_recept_furnace",
+    "namespace": "mod"
+  }
+}
