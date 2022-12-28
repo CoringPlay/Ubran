@@ -16,7 +16,7 @@ public class DeerdropsProcedure {
 		if (entity.isOnFire()) {
 			if (Math.random() < 0.7) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(UbranModItems.COOKEDVENISON.get()));
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(UbranModItems.COOKED_VENISON.get()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -30,7 +30,7 @@ public class DeerdropsProcedure {
 			}
 			if (Math.random() < 0.5) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(UbranModItems.COOKEDVENISON.get()));
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(UbranModItems.COOKED_VENISON.get()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -44,7 +44,7 @@ public class DeerdropsProcedure {
 			}
 			if (Math.random() < 0.2) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(UbranModItems.COOKEDVENISON.get()));
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(UbranModItems.COOKED_VENISON.get()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}

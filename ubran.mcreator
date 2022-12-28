@@ -244,15 +244,6 @@
       "path": "~/Item/Foods"
     },
     {
-      "name": "Cookedvenison",
-      "type": "item",
-      "sortid": 15,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cookedvenison",
-      "path": "~/Item/Foods"
-    },
-    {
       "name": "CookedVenisonFurace",
       "type": "recipe",
       "sortid": 17,
@@ -325,6 +316,15 @@
       "locked_code": false,
       "registry_name": "logsitem",
       "path": "~/Tags/Item_Tags"
+    },
+    {
+      "name": "CookedVenison",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooked_venison",
+      "path": "~/Item/Foods"
     }
   ],
   "variable_elements": [
@@ -349,6 +349,7 @@
       "entity.ubran.creeper_mushroom": "Creeper Mushroom",
       "item.ubran.flame_spawn_egg": "Flame Spawn Egg",
       "item.ubran.venison": "Venison",
+      "item.ubran.cooked_venison": "Cooked Venison",
       "item.ubran.durandal_sword": "Durandal Sword",
       "item.ubran.cookedvenison": "Cooked Venison",
       "item.ubran.angel_axe": "Angel Axe"

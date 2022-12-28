@@ -17,7 +17,7 @@ import net.minecraft.world.item.BlockItem;
 import net.coring.ubran.item.VenisonItem;
 import net.coring.ubran.item.ScytheItem;
 import net.coring.ubran.item.DurandalSwordItem;
-import net.coring.ubran.item.CookedvenisonItem;
+import net.coring.ubran.item.CookedVenisonItem;
 import net.coring.ubran.item.AngelAxeItem;
 import net.coring.ubran.UbranMod;
 
@@ -36,8 +36,8 @@ public class UbranModItems {
 			() -> new ForgeSpawnEggItem(UbranModEntities.CREEPER_MUSHROOM, -6750208, -3355444, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> ANGEL_AXE = REGISTRY.register("angel_axe", () -> new AngelAxeItem());
 	public static final RegistryObject<Item> VENISON = REGISTRY.register("venison", () -> new VenisonItem());
-	public static final RegistryObject<Item> COOKEDVENISON = REGISTRY.register("cookedvenison", () -> new CookedvenisonItem());
 	public static final RegistryObject<Item> DURANDAL_SWORD = REGISTRY.register("durandal_sword", () -> new DurandalSwordItem());
+	public static final RegistryObject<Item> COOKED_VENISON = REGISTRY.register("cooked_venison", () -> new CookedVenisonItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
