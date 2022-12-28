@@ -15,7 +15,7 @@
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "flamedrops",
+      "registry_name": "flame_drops",
       "metadata": {
         "dependencies": [
           {
@@ -95,7 +95,7 @@
       "sortid": 5,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "deerdrops",
+      "registry_name": "deer_drops",
       "metadata": {
         "dependencies": [
           {
