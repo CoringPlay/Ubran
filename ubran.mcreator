@@ -307,6 +307,24 @@
       "locked_code": false,
       "registry_name": "durandal_sword",
       "path": "~/Item/Swords"
+    },
+    {
+      "name": "Logs",
+      "type": "tag",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logs",
+      "path": "~/Tags/block_Tags"
+    },
+    {
+      "name": "Logsitem",
+      "type": "tag",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logsitem",
+      "path": "~/Tags/Item_Tags"
     }
   ],
   "variable_elements": [
