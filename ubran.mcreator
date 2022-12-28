@@ -527,6 +527,7 @@
     "license": "MIT License",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "updateURL": "https://raw.githubusercontent.com/CoringPlay/Ubran/master/update.json",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
