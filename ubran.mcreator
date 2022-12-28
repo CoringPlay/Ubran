@@ -210,7 +210,7 @@
       "sortid": 12,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "angel_axeproc",
+      "registry_name": "angel_axe_proc",
       "metadata": {
         "dependencies": [
           {

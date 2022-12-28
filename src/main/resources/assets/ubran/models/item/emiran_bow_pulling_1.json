@@ -1,0 +1,6 @@
+{
+    "parent": "ubran:item/emiran_bow",
+    "textures": {
+        "layer0": "ubran:items/emiran_bow_pulling_1"
+    }
+}

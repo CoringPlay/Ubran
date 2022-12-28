@@ -13,6 +13,7 @@ import net.coring.ubran.client.model.Modelmushroom_walker;
 import net.coring.ubran.client.model.Modelflama;
 import net.coring.ubran.client.model.Modeldeer;
 import net.coring.ubran.client.model.Modelcreeper_mushroom;
+import net.coring.ubran.client.model.Modelarrow;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class UbranModModels {
@@ -21,6 +22,7 @@ public class UbranModModels {
 		event.registerLayerDefinition(Modelcreeper_mushroom.LAYER_LOCATION, Modelcreeper_mushroom::createBodyLayer);
 		event.registerLayerDefinition(Modelflama.LAYER_LOCATION, Modelflama::createBodyLayer);
 		event.registerLayerDefinition(Modeldeer.LAYER_LOCATION, Modeldeer::createBodyLayer);
+		event.registerLayerDefinition(Modelarrow.LAYER_LOCATION, Modelarrow::createBodyLayer);
 		event.registerLayerDefinition(Modelmushroom_walker.LAYER_LOCATION, Modelmushroom_walker::createBodyLayer);
 	}
 }
