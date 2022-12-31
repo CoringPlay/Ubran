@@ -12,7 +12,7 @@
       "value": "CUSTOM:Venison"
     },
     "smeltingReturnStack": {
-      "value": "CUSTOM:Cookedvenison"
+      "value": "CUSTOM:CookedVenison"
     },
     "name": "cooked_venison_recept_furnace",
     "namespace": "mod"

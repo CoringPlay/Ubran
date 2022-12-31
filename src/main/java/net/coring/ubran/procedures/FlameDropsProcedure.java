@@ -6,7 +6,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.item.ItemEntity;
 
-public class FlamedropsProcedure {
+public class FlameDropsProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (Math.random() < 0.7) {
 			if (world instanceof Level _level && !_level.isClientSide()) {

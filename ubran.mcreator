@@ -10,35 +10,6 @@
       "path": "~/Mobs/Peaceful/Nether"
     },
     {
-      "name": "Flamedrops",
-      "type": "procedure",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "flame_drops",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procerures/Mobs/Drops"
-    },
-    {
       "name": "ScytheProcedur",
       "type": "procedure",
       "sortid": 3,
@@ -178,15 +149,6 @@
       "path": "~/Procerures/Mobs/Drops"
     },
     {
-      "name": "OakWoodWithAHollow",
-      "type": "block",
-      "sortid": 9,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "oak_wood_with_a_hollow",
-      "path": "~/Blocks/Logs"
-    },
-    {
       "name": "CreeperMushroom",
       "type": "livingentity",
       "sortid": 10,
@@ -300,24 +262,6 @@
       "path": "~/Item/Swords"
     },
     {
-      "name": "Logs",
-      "type": "tag",
-      "sortid": 20,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "logs",
-      "path": "~/Tags/block_Tags"
-    },
-    {
-      "name": "Logsitem",
-      "type": "tag",
-      "sortid": 21,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "logsitem",
-      "path": "~/Tags/Item_Tags"
-    },
-    {
       "name": "CookedVenison",
       "type": "item",
       "sortid": 22,
@@ -325,6 +269,35 @@
       "locked_code": false,
       "registry_name": "cooked_venison",
       "path": "~/Item/Foods"
+    },
+    {
+      "name": "FlameDrops",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flame_drops",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procerures/Mobs/Drops"
     }
   ],
   "variable_elements": [
@@ -341,7 +314,6 @@
       "entity.ubran.deer": "Deer",
       "item.ubran.mushroom_walker_spawn_egg": "Mushroom Walker Spawn Egg",
       "entity.ubran.mushroom_walker": "Mushroom Walker",
-      "block.ubran.oak_wood_with_a_hollow": "Oak Wood With A Hollow",
       "item.ubran.scythe": "Scythe",
       "entity.ubran.flame": "Flame",
       "item.ubran.deer_spawn_egg": "Deer Spawn Egg",
@@ -523,18 +495,16 @@
     "modName": "Ubran",
     "version": "0.0.1",
     "author": "CoringPlay, MCreator",
-    "websiteURL": "https://mcreator.net",
+    "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/ubran",
     "license": "MIT License",
-    "disableForgeVersionCheck": true,
+    "disableForgeVersionCheck": false,
     "serverSideOnly": false,
-    "updateURL": "https://raw.githubusercontent.com/CoringPlay/Ubran/master/update.json",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [
-      "crafttweaker",
-      "jade",
-      "jei"
+      "shutup_experimental_settings",
+      "catalogue"
     ],
     "currentGenerator": "forge-1.18.2",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",

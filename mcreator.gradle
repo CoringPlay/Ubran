@@ -1,13 +1,14 @@
 repositories {
-maven { 
-    url = 'https://maven.blamejared.com'
-    name = 'BlameJared Maven'
+    maven {
+        url "https://www.cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
 }
-}   
 dependencies {
-    compileOnly(fg.deobf('com.blamejared.crafttweaker:CraftTweaker-forge-1.18.2:9.1.83'))
-    // Example:
-    // compileOnly(fg.deobf('com.blamejared.crafttweaker:CraftTweaker-forge-1.18.2:9.1.83'))
+   compileOnly fg.deobf("curse.maven:shutupexperimentalsettings-407174:3759881")
+   runtimeOnly fg.deobf("curse.maven:shutupexperimentalsettings-407174:3759881")
 }
 
 repositories {
@@ -19,25 +20,7 @@ repositories {
     }
 }
 dependencies {
-   compileOnly fg.deobf("curse.maven:jade-324717:3681449")
-   runtimeOnly fg.deobf("curse.maven:jade-324717:3681449")
-}
-
-repositories {
-  maven {
-    // location of the maven that hosts JEI files
-    name = "Progwml6 maven"
-    url = "https://dvs1.progwml6.com/files/maven/"
-  }    
-  maven {
-    // location of a maven mirror for JEI files, as a fallback
-    name = "ModMaven"
-    url = "https://modmaven.k-4u.nl"
-  }    
-}
-
-dependencies {
-  compileOnly fg.deobf("mezz.jei:jei-1.18.2:9.7.1.255:api")
-  runtimeOnly fg.deobf("mezz.jei:jei-1.18.2:9.7.1.255")
+   compileOnly fg.deobf("curse.maven:catalogue-459701:3803098")
+   runtimeOnly fg.deobf("curse.maven:catalogue-459701:3803098")
 }
 

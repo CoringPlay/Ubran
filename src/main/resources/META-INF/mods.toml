@@ -7,8 +7,7 @@ modId="ubran"
 version="0.0.1"
 displayName="Ubran"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
-displayURL="https://mcreator.net"
-updateJSONURL="https://raw.githubusercontent.com/CoringPlay/Ubran/master/update.json"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/ubran"
 authors="CoringPlay, MCreator"
 
 [[dependencies.ubran]]
@@ -18,22 +17,22 @@ authors="CoringPlay, MCreator"
     ordering="NONE"
     side="BOTH"
 
+[[dependencies.ubran]]
+    modId="forge"
+    mandatory=true
+    versionRange="[40.1.0]"
+    ordering="NONE"
+    side="BOTH"
 
 
 [[dependencies.ubran]]
-    modId="crafttweaker"
+    modId="shutup_experimental_settings"
     mandatory=false
     versionRange="[0,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.ubran]]
-    modId="jade"
-    mandatory=false
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
-[[dependencies.ubran]]
-    modId="jei"
+    modId="catalogue"
     mandatory=false
     versionRange="[0,)"
     ordering="NONE"

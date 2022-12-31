@@ -17,7 +17,6 @@ import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Holder;
 
-import net.coring.ubran.world.features.ores.OakWoodWithAHollowFeature;
 import net.coring.ubran.world.features.StructureBigHouse1Feature;
 import net.coring.ubran.UbranMod;
 
@@ -30,9 +29,6 @@ import java.util.ArrayList;
 public class UbranModFeatures {
 	public static final DeferredRegister<Feature<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.FEATURES, UbranMod.MODID);
 	private static final List<FeatureRegistration> FEATURE_REGISTRATIONS = new ArrayList<>();
-	public static final RegistryObject<Feature<?>> OAK_WOOD_WITH_A_HOLLOW = register("oak_wood_with_a_hollow", OakWoodWithAHollowFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, OakWoodWithAHollowFeature.GENERATE_BIOMES,
-					OakWoodWithAHollowFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> STRUCTURE_BIG_HOUSE_1 = register("structure_big_house_1", StructureBigHouse1Feature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, StructureBigHouse1Feature.GENERATE_BIOMES,
 					StructureBigHouse1Feature::placedFeature));

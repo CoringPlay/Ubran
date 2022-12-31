@@ -29,7 +29,6 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.coring.ubran.init.UbranModItems;
 import net.coring.ubran.init.UbranModFeatures;
 import net.coring.ubran.init.UbranModEntities;
-import net.coring.ubran.init.UbranModBlocks;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -47,7 +46,7 @@ public class UbranMod {
 	public UbranMod() {
 
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-		UbranModBlocks.REGISTRY.register(bus);
+
 		UbranModItems.REGISTRY.register(bus);
 		UbranModEntities.REGISTRY.register(bus);
 

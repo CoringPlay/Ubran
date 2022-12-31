@@ -15,7 +15,7 @@ public class AngelAxeprocProcedure {
 			return;
 		if (!(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.SATURATION) : false)) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.SATURATION, 10, 1, (true), (false)));
+				_entity.addEffect(new MobEffectInstance(MobEffects.LUCK, 10, 1, (true), (false)));
 			entity.setDeltaMovement(new Vec3((2 * entity.getLookAngle().x), (2 * entity.getLookAngle().y), (2 * entity.getLookAngle().z)));
 			{
 				ItemStack _ist = itemstack;

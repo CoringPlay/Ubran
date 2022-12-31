@@ -28,8 +28,8 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 
-import net.coring.ubran.procedures.FlamedropsProcedure;
 import net.coring.ubran.procedures.FlameInWaterProcedure;
+import net.coring.ubran.procedures.FlameDropsProcedure;
 import net.coring.ubran.init.UbranModEntities;
 
 import java.util.Set;
@@ -93,7 +93,7 @@ public class FlameEntity extends Monster {
 	@Override
 	public void die(DamageSource source) {
 		super.die(source);
-		FlamedropsProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
+		FlameDropsProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
 	}
 
 	@Override
