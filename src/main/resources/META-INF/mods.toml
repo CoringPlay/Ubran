@@ -20,13 +20,13 @@ authors="CoringPlay, MCreator"
 [[dependencies.ubran]]
     modId="forge"
     mandatory=true
-    versionRange="[40.1.0]"
+    versionRange="[40.2.2]"
     ordering="NONE"
     side="BOTH"
 
 
 [[dependencies.ubran]]
-    modId="shutup_experimental_settings"
+    modId="jade"
     mandatory=false
     versionRange="[0,)"
     ordering="NONE"

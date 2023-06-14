@@ -1,0 +1,19 @@
+{
+  "_fv": 43,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "texture": "worried_rhythm",
+    "description": "Ubran: Worriend Rhythm (Coring)",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "specialInfo": [],
+    "hasGlow": false,
+    "music": {
+      "value": "CUSTOM:music.worriend_rhythm"
+    },
+    "lengthInTicks": 100,
+    "analogOutput": 4
+  }
+}

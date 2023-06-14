@@ -1,0 +1,10 @@
+{
+  "music.worriend_rhythm": {
+    "sounds": [
+      {
+        "name": "ubran:happy-platforming",
+        "stream": true
+      }
+    ]
+  }
+}

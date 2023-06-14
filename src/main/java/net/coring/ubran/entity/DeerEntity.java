@@ -37,8 +37,7 @@ import java.util.Set;
 
 @Mod.EventBusSubscriber
 public class DeerEntity extends Monster {
-	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("frozen_peaks"), new ResourceLocation("snowy_taiga"),
-			new ResourceLocation("jagged_peaks"));
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("frozen_peaks"), new ResourceLocation("snowy_taiga"), new ResourceLocation("jagged_peaks"));
 
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
@@ -94,8 +93,7 @@ public class DeerEntity extends Monster {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(UbranModEntities.DEER.get(), SpawnPlacements.Type.NO_RESTRICTIONS, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				Mob::checkMobSpawnRules);
+		SpawnPlacements.register(UbranModEntities.DEER.get(), SpawnPlacements.Type.NO_RESTRICTIONS, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Mob::checkMobSpawnRules);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

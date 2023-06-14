@@ -103,8 +103,7 @@ public class FlameEntity extends Monster {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(UbranModEntities.FLAME.get(), SpawnPlacements.Type.NO_RESTRICTIONS, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				Mob::checkMobSpawnRules);
+		SpawnPlacements.register(UbranModEntities.FLAME.get(), SpawnPlacements.Type.NO_RESTRICTIONS, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, Mob::checkMobSpawnRules);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

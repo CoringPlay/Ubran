@@ -35,7 +35,7 @@ public class DurandalSwordItem extends SwordItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.EMPTY;
+				return Ingredient.of();
 			}
 		}, 3, -1.5f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant());
 	}

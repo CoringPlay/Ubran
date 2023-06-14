@@ -38,7 +38,7 @@ public class ScytheItem extends HoeItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.EMPTY;
+				return Ingredient.of();
 			}
 		}, 0, -2f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
 	}

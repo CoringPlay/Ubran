@@ -8,9 +8,8 @@ import net.minecraft.world.food.FoodProperties;
 
 public class CookedVenisonItem extends Item {
 	public CookedVenisonItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(14).saturationMod(6f)
+		super(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(14).saturationMod(6f)
 
-						.build()));
+				.build()));
 	}
 }

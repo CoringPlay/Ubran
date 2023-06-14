@@ -26,23 +26,19 @@ import net.coring.ubran.UbranMod;
 public class UbranModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITIES, UbranMod.MODID);
 	public static final RegistryObject<EntityType<FlameEntity>> FLAME = register("flame",
-			EntityType.Builder.<FlameEntity>of(FlameEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(3).setCustomClientFactory(FlameEntity::new).fireImmune().sized(0.6f, 0.9f));
+			EntityType.Builder.<FlameEntity>of(FlameEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FlameEntity::new).fireImmune().sized(0.6f, 0.9f));
 	public static final RegistryObject<EntityType<DeerEntity>> DEER = register("deer",
-			EntityType.Builder.<DeerEntity>of(DeerEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(3).setCustomClientFactory(DeerEntity::new)
+			EntityType.Builder.<DeerEntity>of(DeerEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DeerEntity::new)
 
 					.sized(0.6f, 1f));
 	public static final RegistryObject<EntityType<MushroomWalkerEntity>> MUSHROOM_WALKER = register("mushroom_walker",
-			EntityType.Builder.<MushroomWalkerEntity>of(MushroomWalkerEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MushroomWalkerEntity::new)
+			EntityType.Builder.<MushroomWalkerEntity>of(MushroomWalkerEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MushroomWalkerEntity::new)
 
 					.sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<CreeperMushroomEntity>> CREEPER_MUSHROOM = register("creeper_mushroom",
-			EntityType.Builder.<CreeperMushroomEntity>of(CreeperMushroomEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CreeperMushroomEntity::new)
+			EntityType.Builder.<CreeperMushroomEntity>of(CreeperMushroomEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CreeperMushroomEntity::new)
 
-					.sized(0.6f, 1.7999999999999998f));
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

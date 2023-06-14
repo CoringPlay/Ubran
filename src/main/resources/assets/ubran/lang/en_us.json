@@ -1,5 +1,6 @@
 {
   "entity.ubran.deer": "Deer",
+  "subtitles.music_disc.worried_rhythm": "",
   "item.ubran.mushroom_walker_spawn_egg": "Mushroom Walker Spawn Egg",
   "entity.ubran.mushroom_walker": "Mushroom Walker",
   "item.ubran.scythe": "Scythe",
@@ -8,9 +9,13 @@
   "item.ubran.creeper_mushroom_spawn_egg": "Creeper Mushroom Spawn Egg",
   "entity.ubran.creeper_mushroom": "Creeper Mushroom",
   "item.ubran.flame_spawn_egg": "Flame Spawn Egg",
+  "subtitles.music.worriend_rhythm": "",
+  "item.ubran.worriend_rhythm.desc": "Ubran: Worriend Rhythm (Coring)",
+  "subtitles.plate.worried_rhythm": "",
   "item.ubran.venison": "Venison",
   "item.ubran.cooked_venison": "Cooked Venison",
   "item.ubran.durandal_sword": "Durandal Sword",
   "item.ubran.cookedvenison": "Cooked Venison",
-  "item.ubran.angel_axe": "Angel Axe"
+  "item.ubran.angel_axe": "Angel Axe",
+  "item.ubran.worriend_rhythm": "Music Disc"
 }

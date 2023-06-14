@@ -37,38 +37,24 @@ public class Modelflama<T extends Entity> extends EntityModel<T> {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
 		PartDefinition haed = partdefinition.addOrReplaceChild("haed",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-4.5F, -9.0F, -4.5F, 9.0F, 9.0F, 9.0F, new CubeDeformation(0.0F)).texOffs(16, 21)
-						.addBox(-4.0F, -10.0F, -4.0F, 0.0F, 1.0F, 8.0F, new CubeDeformation(0.0F)).texOffs(0, 21)
-						.addBox(4.0F, -10.0F, -4.0F, 0.0F, 1.0F, 8.0F, new CubeDeformation(0.0F)).texOffs(16, 13)
-						.addBox(3.0F, -11.0F, -4.0F, 0.0F, 2.0F, 8.0F, new CubeDeformation(0.0F)).texOffs(16, 15)
-						.addBox(-3.0F, -11.0F, -4.0F, 0.0F, 2.0F, 8.0F, new CubeDeformation(0.0F)).texOffs(0, 10)
-						.addBox(2.0F, -12.0F, -4.0F, 0.0F, 3.0F, 8.0F, new CubeDeformation(0.0F)).texOffs(0, 13)
-						.addBox(-2.0F, -12.0F, -4.0F, 0.0F, 3.0F, 8.0F, new CubeDeformation(0.0F)).texOffs(0, 24)
-						.addBox(0.0F, -13.0F, -3.0F, 0.0F, 4.0F, 6.0F, new CubeDeformation(0.0F)),
+				CubeListBuilder.create().texOffs(0, 0).addBox(-4.5F, -9.0F, -4.5F, 9.0F, 9.0F, 9.0F, new CubeDeformation(0.0F)).texOffs(16, 21).addBox(-4.0F, -10.0F, -4.0F, 0.0F, 1.0F, 8.0F, new CubeDeformation(0.0F)).texOffs(0, 21)
+						.addBox(4.0F, -10.0F, -4.0F, 0.0F, 1.0F, 8.0F, new CubeDeformation(0.0F)).texOffs(16, 13).addBox(3.0F, -11.0F, -4.0F, 0.0F, 2.0F, 8.0F, new CubeDeformation(0.0F)).texOffs(16, 15)
+						.addBox(-3.0F, -11.0F, -4.0F, 0.0F, 2.0F, 8.0F, new CubeDeformation(0.0F)).texOffs(0, 10).addBox(2.0F, -12.0F, -4.0F, 0.0F, 3.0F, 8.0F, new CubeDeformation(0.0F)).texOffs(0, 13)
+						.addBox(-2.0F, -12.0F, -4.0F, 0.0F, 3.0F, 8.0F, new CubeDeformation(0.0F)).texOffs(0, 24).addBox(0.0F, -13.0F, -3.0F, 0.0F, 4.0F, 6.0F, new CubeDeformation(0.0F)),
 				PartPose.offset(0.0F, 21.0F, 0.0F));
-		PartDefinition cube_r1 = haed.addOrReplaceChild("cube_r1",
-				CubeListBuilder.create().texOffs(12, 24).addBox(0.0F, -13.0F, -3.0F, 0.0F, 4.0F, 6.0F, new CubeDeformation(0.0F)),
-				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -1.5708F, 0.0F));
+		PartDefinition cube_r1 = haed.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(12, 24).addBox(0.0F, -13.0F, -3.0F, 0.0F, 4.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -1.5708F, 0.0F));
 		PartDefinition cube_r2 = haed.addOrReplaceChild("cube_r2",
-				CubeListBuilder.create().texOffs(0, 16).addBox(-2.0F, -12.0F, -4.0F, 0.0F, 3.0F, 8.0F, new CubeDeformation(0.0F)).texOffs(16, 17)
-						.addBox(-3.0F, -11.0F, -4.0F, 0.0F, 2.0F, 8.0F, new CubeDeformation(0.0F)).texOffs(16, 10)
-						.addBox(2.0F, -12.0F, -4.0F, 0.0F, 3.0F, 8.0F, new CubeDeformation(0.0F)).texOffs(0, 19)
-						.addBox(3.0F, -11.0F, -4.0F, 0.0F, 2.0F, 8.0F, new CubeDeformation(0.0F)).texOffs(16, 19)
-						.addBox(-4.0F, -10.0F, -4.0F, 0.0F, 1.0F, 8.0F, new CubeDeformation(0.0F)).texOffs(16, 20).addBox(4.0F, -10.0F, -4.0F, 0.0F,
-								1.0F, 8.0F, new CubeDeformation(0.0F)),
+				CubeListBuilder.create().texOffs(0, 16).addBox(-2.0F, -12.0F, -4.0F, 0.0F, 3.0F, 8.0F, new CubeDeformation(0.0F)).texOffs(16, 17).addBox(-3.0F, -11.0F, -4.0F, 0.0F, 2.0F, 8.0F, new CubeDeformation(0.0F)).texOffs(16, 10)
+						.addBox(2.0F, -12.0F, -4.0F, 0.0F, 3.0F, 8.0F, new CubeDeformation(0.0F)).texOffs(0, 19).addBox(3.0F, -11.0F, -4.0F, 0.0F, 2.0F, 8.0F, new CubeDeformation(0.0F)).texOffs(16, 19)
+						.addBox(-4.0F, -10.0F, -4.0F, 0.0F, 1.0F, 8.0F, new CubeDeformation(0.0F)).texOffs(16, 20).addBox(4.0F, -10.0F, -4.0F, 0.0F, 1.0F, 8.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 1.5708F, 0.0F));
-		PartDefinition l_legs = partdefinition.addOrReplaceChild("l_legs",
-				CubeListBuilder.create().texOffs(29, 27).addBox(1.0F, -3.0F, -1.5F, 3.0F, 3.0F, 3.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 24.0F, 0.0F));
-		PartDefinition r_legs = partdefinition.addOrReplaceChild("r_legs",
-				CubeListBuilder.create().texOffs(27, 0).addBox(-4.0F, -3.0F, -1.5F, 3.0F, 3.0F, 3.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 24.0F, 0.0F));
+		PartDefinition l_legs = partdefinition.addOrReplaceChild("l_legs", CubeListBuilder.create().texOffs(29, 27).addBox(1.0F, -3.0F, -1.5F, 3.0F, 3.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 24.0F, 0.0F));
+		PartDefinition r_legs = partdefinition.addOrReplaceChild("r_legs", CubeListBuilder.create().texOffs(27, 0).addBox(-4.0F, -3.0F, -1.5F, 3.0F, 3.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 24.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 64, 64);
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		haed.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		l_legs.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		r_legs.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
