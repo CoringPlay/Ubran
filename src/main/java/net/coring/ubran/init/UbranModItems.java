@@ -9,12 +9,15 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.BlockItem;
 
 import net.coring.ubran.item.WorriendRhythmItem;
 import net.coring.ubran.item.VenisonItem;
 import net.coring.ubran.item.ScytheItem;
+import net.coring.ubran.item.FanerisSwordItem;
 import net.coring.ubran.item.DurandalSwordItem;
 import net.coring.ubran.item.CookedVenisonItem;
 import net.coring.ubran.item.AngelAxeItem;
@@ -34,4 +37,10 @@ public class UbranModItems {
 	public static final RegistryObject<Item> DURANDAL_SWORD = REGISTRY.register("durandal_sword", () -> new DurandalSwordItem());
 	public static final RegistryObject<Item> COOKED_VENISON = REGISTRY.register("cooked_venison", () -> new CookedVenisonItem());
 	public static final RegistryObject<Item> WORRIEND_RHYTHM = REGISTRY.register("worriend_rhythm", () -> new WorriendRhythmItem());
+	public static final RegistryObject<Item> FANERIS_SWORD = REGISTRY.register("faneris_sword", () -> new FanerisSwordItem());
+	public static final RegistryObject<Item> MENDING_BLOCK = block(UbranModBlocks.MENDING_BLOCK, null);
+
+	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
+		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
+	}
 }

@@ -1,10 +1,10 @@
 {
 	"homepage": "https://www.curseforge.com/minecraft/mc-mods/ubran",
+	"1.18.2": {
+		"0.0.1": "Recommanded"
+	},
 	"promos": {
 		"1.18.2-latest": "0.0.1",
 		"1.18.2-recommended": "0.0.1"
-	},
-	"1.18.2": {
-		"0.0.1": "Recommanded"
 	}
 }

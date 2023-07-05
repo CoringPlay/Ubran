@@ -8,6 +8,7 @@ version="0.0.1"
 displayName="Ubran"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/ubran"
+updateJSONURL="https://raw.githubusercontent.com/CoringPlay/Ubran/master/update.json"
 authors="CoringPlay, MCreator"
 
 [[dependencies.ubran]]
@@ -26,6 +27,12 @@ authors="CoringPlay, MCreator"
 
 
 [[dependencies.ubran]]
+    modId="nbt_tool"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.ubran]]
     modId="jade"
     mandatory=false
     versionRange="[0,)"
@@ -33,6 +40,12 @@ authors="CoringPlay, MCreator"
     side="BOTH"
 [[dependencies.ubran]]
     modId="catalogue"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.ubran]]
+    modId="jei"
     mandatory=false
     versionRange="[0,)"
     ordering="NONE"

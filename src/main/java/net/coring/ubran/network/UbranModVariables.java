@@ -103,7 +103,7 @@ public class UbranModVariables {
 	}
 
 	public static class PlayerVariables {
-		public double BabyDeerInDeer = 0;
+		public double BabyDeerInDeer = 0.0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)

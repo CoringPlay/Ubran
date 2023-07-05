@@ -407,6 +407,110 @@
         ]
       },
       "path": "~/Music"
+    },
+    {
+      "name": "FanerisSwordAttackEntity",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "faneris_sword_attack_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/coring/ubran/procedures/FanerisSwordAttackEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procerures/Items"
+    },
+    {
+      "name": "FanerisSword",
+      "type": "tool",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "faneris_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/coring/ubran/item/FanerisSwordItem.java",
+          "src/main/resources/assets/ubran/models/item/faneris_sword.json"
+        ]
+      },
+      "path": "~/Item/Swords"
+    },
+    {
+      "name": "MendingBlockGuiButton10Lvl",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mending_block_gui_button_10_lvl",
+      "metadata": {
+        "files": [
+          "src/main/java/net/coring/ubran/procedures/MendingBlockGuiButton10LvlProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Gui/Mending Block"
+    },
+    {
+      "name": "MendingBlockGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mending_block_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/coring/ubran/network/MendingBlockGuiButtonMessage.java",
+          "src/main/java/net/coring/ubran/world/inventory/MendingBlockGuiMenu.java",
+          "src/main/java/net/coring/ubran/client/gui/MendingBlockGuiScreen.java"
+        ]
+      },
+      "path": "~/Gui/Mending Block"
+    },
+    {
+      "name": "MendingBlock",
+      "type": "block",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mending_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/coring/ubran/block/MendingBlockBlock.java",
+          "src/main/resources/assets/ubran/models/item/mending_block.json",
+          "src/main/resources/assets/ubran/blockstates/mending_block.json",
+          "src/main/java/net/coring/ubran/block/entity/MendingBlockBlockEntity.java",
+          "src/main/resources/assets/ubran/models/block/mending_block.json"
+        ]
+      },
+      "path": "~/Blocks/Block"
     }
   ],
   "variable_elements": [
@@ -414,7 +518,7 @@
       "name": "BabyDeerInDeer",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0"
+      "value": "0.0"
     }
   ],
   "sound_elements": [
@@ -434,13 +538,16 @@
       "item.ubran.mushroom_walker_spawn_egg": "Mushroom Walker Spawn Egg",
       "entity.ubran.mushroom_walker": "Mushroom Walker",
       "item.ubran.scythe": "Scythe",
+      "block.ubran.mending_block": "Mending Block",
       "entity.ubran.flame": "Flame",
       "item.ubran.deer_spawn_egg": "Deer Spawn Egg",
+      "gui.ubran.mending_block_gui.button_10_lvl": "10 lvl",
       "item.ubran.creeper_mushroom_spawn_egg": "Creeper Mushroom Spawn Egg",
       "entity.ubran.creeper_mushroom": "Creeper Mushroom",
       "item.ubran.flame_spawn_egg": "Flame Spawn Egg",
-      "subtitles.music.worriend_rhythm": "",
       "item.ubran.worriend_rhythm.desc": "Ubran: Worriend Rhythm (Coring)",
+      "item.ubran.faneris_sword": "Faneris Sword",
+      "subtitles.music.worriend_rhythm": "",
       "subtitles.plate.worried_rhythm": "",
       "item.ubran.venison": "Venison",
       "item.ubran.cooked_venison": "Cooked Venison",
@@ -506,10 +613,19 @@
           },
           {
             "name": "Blocks",
-            "children": []
+            "children": [
+              {
+                "name": "Open Gui",
+                "children": []
+              }
+            ]
           },
           {
             "name": "Items",
+            "children": []
+          },
+          {
+            "name": "Armor",
             "children": []
           }
         ]
@@ -544,6 +660,10 @@
           {
             "name": "Cooking",
             "children": []
+          },
+          {
+            "name": "Misc",
+            "children": []
           }
         ]
       },
@@ -556,6 +676,10 @@
           },
           {
             "name": "Pot",
+            "children": []
+          },
+          {
+            "name": "Block",
             "children": []
           }
         ]
@@ -614,6 +738,15 @@
       {
         "name": "Music",
         "children": []
+      },
+      {
+        "name": "Gui",
+        "children": [
+          {
+            "name": "Mending Block",
+            "children": []
+          }
+        ]
       }
     ]
   },
@@ -626,12 +759,15 @@
     "license": "MIT License",
     "disableForgeVersionCheck": false,
     "serverSideOnly": false,
+    "updateURL": "https://raw.githubusercontent.com/CoringPlay/Ubran/master/update.json",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [
+      "nbt_tool",
       "jade",
-      "catalogue"
+      "catalogue",
+      "jei"
     ],
     "currentGenerator": "forge-1.18.2",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",

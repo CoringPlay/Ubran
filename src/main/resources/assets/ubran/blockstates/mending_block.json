@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ubran:block/mending_block"
+    },
+    "facing=east": {
+      "model": "ubran:block/mending_block",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ubran:block/mending_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ubran:block/mending_block",
+      "y": 270
+    }
+  }
+}
