@@ -14,18 +14,21 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
+import net.coring.ubran.block.ZoologistsTableBlock;
 import net.coring.ubran.block.MendingBlockBlock;
 import net.coring.ubran.UbranMod;
 
 public class UbranModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, UbranMod.MODID);
 	public static final RegistryObject<Block> MENDING_BLOCK = REGISTRY.register("mending_block", () -> new MendingBlockBlock());
+	public static final RegistryObject<Block> ZOOLOGISTS_TABLE = REGISTRY.register("zoologists_table", () -> new ZoologistsTableBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
 		@SubscribeEvent
 		public static void clientSetup(FMLClientSetupEvent event) {
 			MendingBlockBlock.registerRenderLayer();
+			ZoologistsTableBlock.registerRenderLayer();
 		}
 	}
 }

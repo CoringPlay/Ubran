@@ -1,0 +1,8 @@
+{
+  "parent": "ubran:custom/zoologists_table",
+  "textures": {
+    "all": "ubran:blocks/zoologists_table",
+    "particle": "ubran:blocks/zoologists_table",
+    "0": "ubran:blocks/zoologists_table"
+  }
+}

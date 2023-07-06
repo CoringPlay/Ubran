@@ -13,7 +13,7 @@ public class DivingCylinderAddOxygenProcedure {
 		if (entity == null)
 			return;
 		if (entity.isInWaterOrBubble() && UbranModVariables.diving_cylinder_number <= 20 && UbranModVariables.diving_cylinder_number >= 1) {
-			entity.setAirSupply(100);
+			entity.setAirSupply(250);
 			UbranModVariables.diving_cylinder_number = UbranModVariables.diving_cylinder_number - 1;
 			if (!world.isClientSide() && world.getServer() != null)
 				world.getServer().getPlayerList().broadcastMessage(new TextComponent("-1"), ChatType.SYSTEM, Util.NIL_UUID);
