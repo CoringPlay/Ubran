@@ -31,6 +31,8 @@ import java.util.function.Supplier;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class UbranModVariables {
+	public static double diving_cylinder_number = 20.0;
+
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		UbranMod.addNetworkMessage(PlayerVariablesSyncMessage.class, PlayerVariablesSyncMessage::buffer, PlayerVariablesSyncMessage::new, PlayerVariablesSyncMessage::handler);

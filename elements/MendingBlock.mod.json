@@ -53,14 +53,14 @@
     ],
     "name": "Mending Block",
     "specialInfo": [],
-    "hardness": 1.0,
+    "hardness": 1.0999999999999999,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": true,
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "DECORATIONS"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },
@@ -81,7 +81,7 @@
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "DEFAULT",
+    "colorOnMap": "CLAY",
     "creativePickItem": {
       "value": ""
     },
@@ -121,7 +121,7 @@
     "hasInventory": true,
     "guiBoundTo": "MendingBlockGui",
     "openGUIOnRightClick": true,
-    "inventorySize": 9,
+    "inventorySize": 1,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,

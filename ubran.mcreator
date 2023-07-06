@@ -482,6 +482,7 @@
     {
       "name": "MendingBlockGui",
       "type": "gui",
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mending_block_gui",
@@ -511,6 +512,45 @@
         ]
       },
       "path": "~/Blocks/Block"
+    },
+    {
+      "name": "DivingCylinderAddOxygen",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diving_cylinder_add_oxygen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/coring/ubran/procedures/DivingCylinderAddOxygenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procerures/Items"
+    },
+    {
+      "name": "DivingCylinder",
+      "type": "item",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diving_cylinder",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ubran/models/item/diving_cylinder.json",
+          "src/main/java/net/coring/ubran/item/DivingCylinderItem.java"
+        ]
+      },
+      "path": "~/Item/Misc"
     }
   ],
   "variable_elements": [
@@ -519,6 +559,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0.0"
+    },
+    {
+      "name": "diving_cylinder_number",
+      "type": "number",
+      "scope": "global",
+      "value": "20.0"
     }
   ],
   "sound_elements": [
@@ -545,14 +591,15 @@
       "item.ubran.creeper_mushroom_spawn_egg": "Creeper Mushroom Spawn Egg",
       "entity.ubran.creeper_mushroom": "Creeper Mushroom",
       "item.ubran.flame_spawn_egg": "Flame Spawn Egg",
-      "item.ubran.worriend_rhythm.desc": "Ubran: Worriend Rhythm (Coring)",
       "item.ubran.faneris_sword": "Faneris Sword",
+      "item.ubran.worriend_rhythm.desc": "Ubran: Worriend Rhythm (Coring)",
       "subtitles.music.worriend_rhythm": "",
       "subtitles.plate.worried_rhythm": "",
       "item.ubran.venison": "Venison",
       "item.ubran.cooked_venison": "Cooked Venison",
       "item.ubran.durandal_sword": "Durandal Sword",
       "item.ubran.cookedvenison": "Cooked Venison",
+      "item.ubran.diving_cylinder": "Diving Cylinder (WIP)",
       "item.ubran.angel_axe": "Angel Axe",
       "item.ubran.worriend_rhythm": "Music Disc"
     }
@@ -658,10 +705,6 @@
             "children": []
           },
           {
-            "name": "Cooking",
-            "children": []
-          },
-          {
             "name": "Misc",
             "children": []
           }
@@ -683,6 +726,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Music",
+        "children": []
       },
       {
         "name": "Gamerule",
@@ -734,10 +781,6 @@
             "children": []
           }
         ]
-      },
-      {
-        "name": "Music",
-        "children": []
       },
       {
         "name": "Gui",
