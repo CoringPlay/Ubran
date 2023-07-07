@@ -27,12 +27,6 @@ authors="CoringPlay, MCreator"
 
 
 [[dependencies.ubran]]
-    modId="nbt_tool"
-    mandatory=false
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
-[[dependencies.ubran]]
     modId="jade"
     mandatory=false
     versionRange="[0,)"

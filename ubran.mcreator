@@ -553,38 +553,6 @@
       "path": "~/Item/Misc"
     },
     {
-      "name": "PlayerOnCandles",
-      "type": "procedure",
-      "sortid": 33,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rain_candles",
-      "metadata": {
-        "files": [
-          "src/main/java/net/coring/ubran/procedures/PlayerOnCandlesProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procerures/Blocks"
-    },
-    {
       "name": "SwordsTags",
       "type": "tag",
       "compiles": true,
@@ -613,6 +581,55 @@
         ]
       },
       "path": "~/Blocks/Block/Block Village"
+    },
+    {
+      "name": "LavaSponge",
+      "type": "block",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lava_sponge",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ubran/models/block/lava_sponge.json",
+          "src/main/resources/assets/ubran/models/item/lava_sponge.json",
+          "src/main/resources/assets/ubran/blockstates/lava_sponge.json",
+          "src/main/java/net/coring/ubran/block/LavaSpongeBlock.java"
+        ]
+      },
+      "path": "~/Blocks/Block"
+    },
+    {
+      "name": "LavaSpongePlace",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lava_sponge_place",
+      "metadata": {
+        "files": [
+          "src/main/java/net/coring/ubran/procedures/LavaSpongePlaceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procerures/Items"
     }
   ],
   "variable_elements": [
@@ -654,6 +671,7 @@
       "item.ubran.cooked_venison": "Cooked Venison",
       "item.ubran.durandal_sword": "Durandal Sword",
       "item.ubran.cookedvenison": "Cooked Venison",
+      "block.ubran.lava_sponge": "Lava Sponge",
       "item.ubran.diving_cylinder": "Diving Cylinder (WIP)",
       "item.ubran.worriend_rhythm": "Music Disc",
       "entity.ubran.deer": "Deer",
@@ -688,6 +706,10 @@
           },
           {
             "name": "Agresic",
+            "children": []
+          },
+          {
+            "name": "Village",
             "children": []
           }
         ]
@@ -769,10 +791,6 @@
           },
           {
             "name": "Misc",
-            "children": []
-          },
-          {
-            "name": "Village",
             "children": []
           }
         ]
@@ -893,7 +911,6 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [
-      "nbt_tool",
       "jade",
       "catalogue",
       "jei"

@@ -42,6 +42,7 @@ public class UbranModItems {
 	public static final RegistryObject<Item> MENDING_BLOCK = block(UbranModBlocks.MENDING_BLOCK, CreativeModeTab.TAB_DECORATIONS);
 	public static final RegistryObject<Item> DIVING_CYLINDER = REGISTRY.register("diving_cylinder", () -> new DivingCylinderItem());
 	public static final RegistryObject<Item> ZOOLOGISTS_TABLE = block(UbranModBlocks.ZOOLOGISTS_TABLE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> LAVA_SPONGE = block(UbranModBlocks.LAVA_SPONGE, null);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

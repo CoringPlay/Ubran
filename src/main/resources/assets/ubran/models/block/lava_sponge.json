@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ubran:blocks/lava_sponge",
+    "up": "ubran:blocks/lava_sponge",
+    "north": "ubran:blocks/lava_sponge",
+    "east": "ubran:blocks/lava_sponge",
+    "south": "ubran:blocks/lava_sponge",
+    "west": "ubran:blocks/lava_sponge",
+    "particle": "ubran:blocks/lava_sponge"
+  }
+}
