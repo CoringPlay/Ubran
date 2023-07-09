@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "ubran:blessed_ingot_of_gold"
+    }
+  },
+  "result": {
+    "item": "ubran:block_of_blessed_gold",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ubran:blocks/block_of_blessing_bottom",
+    "up": "ubran:blocks/block_of_blessing_top",
+    "north": "ubran:blocks/block_of_blessing_side",
+    "east": "ubran:blocks/block_of_blessing_side",
+    "south": "ubran:blocks/block_of_blessing_side",
+    "west": "ubran:blocks/block_of_blessing_side",
+    "particle": "ubran:blocks/block_of_blessing_bottom"
+  }
+}

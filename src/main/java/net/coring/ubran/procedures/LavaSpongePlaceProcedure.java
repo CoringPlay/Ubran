@@ -1,8 +1,12 @@
 package net.coring.ubran.procedures;
 
+import net.minecraft.world.level.block.state.properties.Property;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.core.BlockPos;
+
+import java.util.Map;
 
 public class LavaSpongePlaceProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -10,26 +14,34 @@ public class LavaSpongePlaceProcedure {
 		double sx = 0;
 		double sy = 0;
 		double sz = 0;
-		sx = -3;
-		found = false;
-		for (int index0 = 0; index0 < 6; index0++) {
-			sy = -3;
-			for (int index1 = 0; index1 < 6; index1++) {
-				sz = -3;
-				for (int index2 = 0; index2 < 6; index2++) {
-					if ((world.getBlockState(new BlockPos(x + sx, y + sy, z + sz))).getBlock() == Blocks.LAVA) {
-						found = true;
+		if ((world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == Blocks.LAVA) {
+			int horizontalRadiusSphere = (int) 10 - 1;
+			int verticalRadiusSphere = (int) 10 - 1;
+			int yIterationsSphere = verticalRadiusSphere;
+			for (int i = -yIterationsSphere; i <= yIterationsSphere; i++) {
+				for (int xi = -horizontalRadiusSphere; xi <= horizontalRadiusSphere; xi++) {
+					for (int zi = -horizontalRadiusSphere; zi <= horizontalRadiusSphere; zi++) {
+						double distanceSq = (xi * xi) / (double) (horizontalRadiusSphere * horizontalRadiusSphere) + (i * i) / (double) (verticalRadiusSphere * verticalRadiusSphere)
+								+ (zi * zi) / (double) (horizontalRadiusSphere * horizontalRadiusSphere);
+						if (distanceSq <= 1.0) {
+							{
+								BlockPos _bp = new BlockPos(x, y, z);
+								BlockState _bs = Blocks.AIR.defaultBlockState();
+								BlockState _bso = world.getBlockState(_bp);
+								for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+									Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+									if (_property != null && _bs.getValue(_property) != null)
+										try {
+											_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+										} catch (Exception e) {
+										}
+								}
+								world.setBlock(_bp, _bs, 3);
+							}
+						}
 					}
-					sz = sz + 1;
 				}
-				sy = sy + 1;
 			}
-			sx = sx + 1;
-		}
-		if (found == true) {
-			world.setBlock(new BlockPos(x + 1, y, z), Blocks.AIR.defaultBlockState(), 3);
-			world.setBlock(new BlockPos(x, y + 1, z), Blocks.AIR.defaultBlockState(), 3);
-			world.setBlock(new BlockPos(x, y, z + 1), Blocks.AIR.defaultBlockState(), 3);
 		}
 	}
 }

@@ -21,6 +21,7 @@ import net.coring.ubran.item.FanerisSwordItem;
 import net.coring.ubran.item.DurandalSwordItem;
 import net.coring.ubran.item.DivingCylinderItem;
 import net.coring.ubran.item.CookedVenisonItem;
+import net.coring.ubran.item.BlessedIngotOfGoldItem;
 import net.coring.ubran.item.AngelAxeItem;
 import net.coring.ubran.UbranMod;
 
@@ -43,6 +44,9 @@ public class UbranModItems {
 	public static final RegistryObject<Item> DIVING_CYLINDER = REGISTRY.register("diving_cylinder", () -> new DivingCylinderItem());
 	public static final RegistryObject<Item> ZOOLOGISTS_TABLE = block(UbranModBlocks.ZOOLOGISTS_TABLE, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> LAVA_SPONGE = block(UbranModBlocks.LAVA_SPONGE, null);
+	public static final RegistryObject<Item> BLESSED_INGOT_OF_GOLD = REGISTRY.register("blessed_ingot_of_gold", () -> new BlessedIngotOfGoldItem());
+	public static final RegistryObject<Item> BLOCK_OF_BLESSED_GOLD = block(UbranModBlocks.BLOCK_OF_BLESSED_GOLD, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> BLOCK_OF_BLESSING = block(UbranModBlocks.BLOCK_OF_BLESSING, CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ubran:block_of_blessed_gold"
+    }
+  ],
+  "result": {
+    "item": "ubran:blessed_ingot_of_gold",
+    "count": 9
+  }
+}

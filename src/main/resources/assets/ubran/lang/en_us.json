@@ -6,8 +6,9 @@
   "item.ubran.creeper_mushroom_spawn_egg": "Creeper Mushroom Spawn Egg",
   "entity.ubran.creeper_mushroom": "Creeper Mushroom",
   "item.ubran.flame_spawn_egg": "Flame Spawn Egg",
-  "item.ubran.faneris_sword": "Faneris Sword",
   "item.ubran.worriend_rhythm.desc": "Ubran: Worriend Rhythm (Coring)",
+  "item.ubran.faneris_sword": "Faneris Sword",
+  "block.ubran.block_of_blessed_gold": "Block Of Blessed Gold Ingot",
   "item.ubran.venison": "Venison",
   "item.ubran.cooked_venison": "Cooked Venison",
   "item.ubran.durandal_sword": "Durandal Sword",
@@ -23,5 +24,7 @@
   "block.ubran.mending_block": "Mending Block",
   "subtitles.music.worriend_rhythm": "",
   "subtitles.plate.worried_rhythm": "",
-  "item.ubran.angel_axe": "Angel Axe"
+  "block.ubran.block_of_blessing": "Block Of Blessing",
+  "item.ubran.angel_axe": "Angel Axe",
+  "item.ubran.blessed_ingot_of_gold": "Blessed Ingot Of Gold"
 }

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LGL",
+    "LSL",
+    " S "
+  ],
+  "key": {
+    "L": {
+      "item": "ubran:blessed_ingot_of_gold"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "ubran:angel_axe",
+    "count": 1
+  }
+}

@@ -629,7 +629,118 @@
           }
         ]
       },
-      "path": "~/Procerures/Items"
+      "path": "~/Procerures/Blocks"
+    },
+    {
+      "name": "BlessedIngotOfGold",
+      "type": "item",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blessed_ingot_of_gold",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ubran/models/item/blessed_ingot_of_gold.json",
+          "src/main/java/net/coring/ubran/item/BlessedIngotOfGoldItem.java"
+        ]
+      },
+      "path": "~/Item/ingot"
+    },
+    {
+      "name": "BlockOfBlessedGoldIngot",
+      "type": "block",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_of_blessed_gold",
+      "metadata": {
+        "files": [
+          "src/main/java/net/coring/ubran/block/BlockOfBlessedGoldIngotBlock.java",
+          "src/main/resources/assets/ubran/blockstates/block_of_blessed_gold.json",
+          "src/main/resources/assets/ubran/models/block/block_of_blessed_gold.json",
+          "src/main/resources/assets/ubran/models/item/block_of_blessed_gold.json"
+        ]
+      },
+      "path": "~/Blocks/Block"
+    },
+    {
+      "name": "BlockOfBlessedGoldRecept",
+      "type": "recipe",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_of_blessed_gold_recept",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ubran/recipes/block_of_blessed_gold.json"
+        ]
+      },
+      "path": "~/Craft/Table/Blocks"
+    },
+    {
+      "name": "BlockOfBlessedGoldDerecept",
+      "type": "recipe",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_of_blessed_gold_derecept",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ubran/recipes/block_of_blessed_gold_derecept.json"
+        ]
+      },
+      "path": "~/Craft/Table/Blocks"
+    },
+    {
+      "name": "BlockOfBlessing",
+      "type": "block",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_of_blessing",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ubran/blockstates/block_of_blessing.json",
+          "src/main/resources/assets/ubran/models/item/block_of_blessing.json",
+          "src/main/resources/assets/ubran/models/block/block_of_blessing.json",
+          "src/main/java/net/coring/ubran/block/BlockOfBlessingBlock.java"
+        ]
+      },
+      "path": "~/Blocks/Block"
+    },
+    {
+      "name": "BlockOfBlessingRightClick",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_of_blessing_right_click",
+      "metadata": {
+        "files": [
+          "src/main/java/net/coring/ubran/procedures/BlockOfBlessingRightClickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procerures/Blocks"
+    },
+    {
+      "name": "AngelAxeRecept",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "angel_axe_recept",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ubran/recipes/angel_axe.json"
+        ]
+      },
+      "path": "~/Craft/Table/Item"
     }
   ],
   "variable_elements": [
@@ -665,8 +776,9 @@
       "item.ubran.creeper_mushroom_spawn_egg": "Creeper Mushroom Spawn Egg",
       "entity.ubran.creeper_mushroom": "Creeper Mushroom",
       "item.ubran.flame_spawn_egg": "Flame Spawn Egg",
-      "item.ubran.faneris_sword": "Faneris Sword",
       "item.ubran.worriend_rhythm.desc": "Ubran: Worriend Rhythm (Coring)",
+      "item.ubran.faneris_sword": "Faneris Sword",
+      "block.ubran.block_of_blessed_gold": "Block Of Blessed Gold Ingot",
       "item.ubran.venison": "Venison",
       "item.ubran.cooked_venison": "Cooked Venison",
       "item.ubran.durandal_sword": "Durandal Sword",
@@ -682,7 +794,9 @@
       "block.ubran.mending_block": "Mending Block",
       "subtitles.music.worriend_rhythm": "",
       "subtitles.plate.worried_rhythm": "",
-      "item.ubran.angel_axe": "Angel Axe"
+      "block.ubran.block_of_blessing": "Block Of Blessing",
+      "item.ubran.angel_axe": "Angel Axe",
+      "item.ubran.blessed_ingot_of_gold": "Blessed Ingot Of Gold"
     }
   },
   "foldersRoot": {
@@ -792,6 +906,10 @@
           {
             "name": "Misc",
             "children": []
+          },
+          {
+            "name": "ingot",
+            "children": []
           }
         ]
       },
@@ -874,7 +992,16 @@
         "children": [
           {
             "name": "Table",
-            "children": []
+            "children": [
+              {
+                "name": "Blocks",
+                "children": []
+              },
+              {
+                "name": "Item",
+                "children": []
+              }
+            ]
           },
           {
             "name": "Furnase",
@@ -911,6 +1038,7 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [
+      "worldedit",
       "jade",
       "catalogue",
       "jei"

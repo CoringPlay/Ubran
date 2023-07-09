@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "ubran:mending_block"
+    "ubran:mending_block",
+    "ubran:block_of_blessed_gold",
+    "ubran:block_of_blessing"
   ]
 }

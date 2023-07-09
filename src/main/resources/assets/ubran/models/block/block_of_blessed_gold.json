@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ubran:blocks/block_of_blessed_gold_ingot",
+    "up": "ubran:blocks/block_of_blessed_gold_ingot",
+    "north": "ubran:blocks/block_of_blessed_gold_ingot",
+    "east": "ubran:blocks/block_of_blessed_gold_ingot",
+    "south": "ubran:blocks/block_of_blessed_gold_ingot",
+    "west": "ubran:blocks/block_of_blessed_gold_ingot",
+    "particle": "ubran:blocks/block_of_blessed_gold_ingot"
+  }
+}
